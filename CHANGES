@@ -1,3 +1,9 @@
+0.108
+
+At the request Michael Schwern, do not "require threads" any longer as
+it can upset Test::Builder. Anyone using threads should already have
+done that themselves. Anyway not, doesn't need it.
+
 0.107
 
 Test::Tester::Capgture::new used to just return __PACKAGE__
