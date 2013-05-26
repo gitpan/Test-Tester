@@ -293,6 +293,11 @@ HOW IT WORKS
     except, instead of outputting test results and diagnostics, it just records
     all the information for later analysis.
 
+CAVEATS
+    Support for calling Test::Builder->note is minimal. It's implemented as an
+    empty stub, so modules that use it will not crash but the calls are not
+    recorded for testing purposes like the others. Patches welcome.
+
 SEE ALSO
     Test::Builder the source of testing goodness. Test::Builder::Tester for an
     alternative approach to the problem tackled by Test::Tester - captures the

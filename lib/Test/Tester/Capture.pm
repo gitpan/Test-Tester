@@ -169,6 +169,15 @@ sub details {
 	return @Test_Results;
 }
 
+
+# Stub. Feel free to send me a patch to implement this.
+sub note {
+}
+
+sub explain {
+	return Test::Builder::explain(@_);
+}
+
 sub premature
 {
 	return $Prem_Diag->{diag};

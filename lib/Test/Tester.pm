@@ -18,7 +18,7 @@ require Exporter;
 
 use vars qw( @ISA @EXPORT $VERSION );
 
-$VERSION = "0.108";
+$VERSION = "0.109";
 @EXPORT = qw( run_tests check_tests check_test cmp_results show_space );
 @ISA = qw( Exporter );
 
@@ -615,6 +615,13 @@ the real Test::Builder object, instead they go to the Test::Tester::Capture
 object. This object seems exactly like the real Test::Builder object,
 except, instead of outputting test results and diagnostics, it just records
 all the information for later analysis.
+
+=head1 CAVEATS
+
+Support for calling Test::Builder->note is minimal. It's implemented
+as an empty stub, so modules that use it will not crash but the calls
+are not recorded for testing purposes like the others. Patches
+welcome.
 
 =head1 SEE ALSO
 

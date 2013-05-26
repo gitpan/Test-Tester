@@ -1,3 +1,7 @@
+0.109
+
+Add minimal support for note and explain (i.e. don't crash).
+
 0.108
 
 At the request Michael Schwern, do not "require threads" any longer as

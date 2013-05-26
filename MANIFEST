@@ -17,3 +17,4 @@ t/run_test.t
 t/SmallTest.pm
 t/fail/fail.t
 TODO
+META.json                                Module JSON meta-data (added by MakeMaker)
